@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.act {
+    background-color: rgb(107, 6, 154);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.bi-sun{
+    font-size: 20px !important;
+    color: #FFD80D;
+    
+}
+
+li {
+    cursor: pointer;
+}
+
+
+#header {
+    z-index: 123456;
+    /* background: white; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header .logout {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+    padding: 10px 23px;
+    background: #0D75FF;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#header .logout:hover {
+    background: rgba(13, 118, 255, 0.7764705882);
+}
+
+.main {
+    margin-top: 90px;
+}
+
+.card-bookmark {
+    background: #F8FAFD;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-wrapper {
+    background: rgba(229, 229, 229, 0.3490196078);
+}
+
+.country-length {
+    box-shadow: 1px 2px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.bg-secondarys {
+    background: rgba(255, 255, 255, 0.54) !important;
+}
+
+.bookmark-btn {
+    background: #FFD80D;
+    border-radius: 4px;
+}
+
+.bookmark-btn:hover {
+    background: rgba(255, 215, 13, 0.5137254902) !important;
+    border-radius: 4px;
+}
+
+.bookmark-info {
+    background: rgba(13, 118, 255, 0.23);
+    border-radius: 4px !important;
+}
+
+.bookmark-info:hover {
+    background: rgba(13, 118, 255, 0.189) !important;
+    border-radius: 4px !important;
+}
+
+.bookmark-redmore {
+    background: #75828A !important;
+    border-radius: 4px;
+    color: white;
+    margin-top: 10px;
+    width: 93% !important;
+}
+
+.bookmark-redmore:hover {
+    background: rgba(117, 130, 138, 0.4745098039) !important;
+    border-radius: 4px;
+    color: white !important;
+    margin-top: 10px;
+    width: 93% !important;
+}
+
+.card-body {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.red-more-wrap {
+    position: fixed;
+    right: -1000px;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    background: white;
+    z-index: 1256734;
+    overflow-y: scroll !important;
+    transition: all 0.4s ease;
+    /* display: none; */
+    /* transform: translateX(1000px);
+    -webkit-transform: translateX(1000px);
+    -moz-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    -o-transform: translateX(1000px); */
+}
+.close_modal{
+    background-color: #8800ff93;
+    padding: 10px 10px 10px 10px ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #FFFFFF;
+}
+.close_modal:active{
+    background-color: #8800ffd9;
+}
+
+.info_text_hidez{
+    display: block;
+}
+
+
+.card-red-more-author span {
+    background: rgba(13, 117, 255, 0.09) !important;
+    border-radius: 30px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 6px 25px;
+    color: #0D75FF;
+  
+}
+
+.btn-redmore {
+    visibility: hidden;
+}
+
+.btn-redmore i {
+    font-size: 40px;
+}
+
+
+
+/* loader */
+
+.loader {
+    margin: auto !important;
+    width: 100px;
+    height: 100px;
+    border: 24px solid rgb(0, 255, 0);
+    border-color: #8800ff #ed1b1b rgb(0, 0, 0) rgb(0, 75, 196);
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite  ;
+    -webkit-animation: rotate 1s linear infinite;
+}
+
+  .loader:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(-50% , -125%);
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      background: rgb(229, 255, 0);
+      border-radius: 50%;
+    }
+  @keyframes rotate {
+    100%   { transform: rotate(360deg)}
+  }
+
+
+@media only screen and (max-width: 992px) {
+    .sun-and-logout {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .input-search {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #serach-country {
+        margin: 20px auto;
+    }
+}
+
+.btn-back {
+    display: none !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .red-more-wrap {
+        width: 100% !important;
+    }
+
+    .btn-redmore {
+        visibility: visible;
+        position: relative;
+        bottom: -60px;
+        left: -10px;
+    }
+
+    .btn-redmore i {
+        font-size: 40px;
+    }
+
+    .sm-none-bookmar {
+        display: none !important;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100% !important;
+        background: white;
+        z-index: 122;
+        overflow-y: scroll !important;
+        height: 90vh;
+    }
+
+    .btn-back {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
